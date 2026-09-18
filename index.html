@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore a região tropical de Alola, um arquipélago cheio de descobertas, formas regionais e aventuras Pokémon.">
+  <title>Alola — Ilhas que vivem</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,700;9..144,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Alola, início">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>alola<span class="brand-dot">.</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a class="active" href="#inicio">Descobrir</a>
+        <a href="#ilhas">As ilhas</a>
+        <a href="#pokedex">Pokédex</a>
+      </nav>
+      <a class="pill-button pill-button--small" href="#pokedex">Começar a explorar <span>↗</span></a>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="eyebrow-line"></span> Região de Alola</p>
+          <h1>Onde cada<br><em>dia é uma</em><br>aventura.</h1>
+          <p class="hero-text">Quatro ilhas, um oceano inteiro para atravessar e uma comunidade que faz qualquer visitante se sentir em casa.</p>
+          <a class="pill-button" href="#ilhas">Conheça o arquipélago <span>→</span></a>
+          <div class="starter-picks">
+            <div class="starter-heading"><span class="pokeball-mini"></span><span>Escolha seu parceiro</span></div>
+            <div class="starter-list">
+              <a class="starter starter--rowlet" href="#pokedex" aria-label="Ver Rowlet">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png" alt="Rowlet">
+                <span>Rowlet</span>
+              </a>
+              <a class="starter starter--litten" href="#pokedex" aria-label="Ver Litten">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png" alt="Litten">
+                <span>Litten</span>
+              </a>
+              <a class="starter starter--popplio" href="#pokedex" aria-label="Ver Popplio">
+                <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/728.png" alt="Popplio">
+                <span>Popplio</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-art" aria-label="Paisagem tropical de Alola">
+          <div class="sun"></div>
+          <div class="sun-glow"></div>
+          <div class="mountain mountain-back"></div>
+          <div class="mountain mountain-front"></div>
+          <div class="ocean"></div>
+          <div class="island"></div>
+          <div class="palm palm-one"><i></i></div>
+          <div class="palm palm-two"><i></i></div>
+          <div class="hero-label"><strong>01</strong><span>Melemele<br>Island</span></div>
+          <div class="hero-stamp">ALO<br><span>HA</span></div>
+        </div>
+        <div class="scroll-hint"><span></span> Role para descobrir</div>
+      </section>
+
+      <section class="intro" id="ilhas">
+        <div>
+          <p class="section-kicker">O arquipélago</p>
+          <h2>Quatro ilhas.<br><em>Mil maneiras</em><br>de explorar.</h2>
+        </div>
+        <div class="intro-detail">
+          <p>Alola é um lugar moldado pelo mar, pelo sol e por fortes laços entre pessoas e Pokémon. Cada ilha tem seu próprio ritmo, paisagem e desafios.</p>
+          <a class="text-link" href="#pokedex">Ver a Pokédex <span>↗</span></a>
+        </div>
+      </section>
+
+      <section class="island-grid" aria-label="Ilhas de Alola">
+        <article class="island-card island-card--mele">
+          <div class="card-top"><span>01</span><span>◒</span></div>
+          <div class="card-info"><h3>Melemele</h3><p>Ilha do início</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
+        <article class="island-card island-card--akala">
+          <div class="card-top"><span>02</span><span>◒</span></div>
+          <div class="card-info"><h3>Akala</h3><p>Ilha da descoberta</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
+        <article class="island-card island-card--ulaula">
+          <div class="card-top"><span>03</span><span>◒</span></div>
+          <div class="card-info"><h3>Ula'ula</h3><p>Ilha da força</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
+        <article class="island-card island-card--pula">
+          <div class="card-top"><span>04</span><span>◒</span></div>
+          <div class="card-info"><h3>Poni</h3><p>Ilha do horizonte</p></div>
+          <span class="card-arrow">↗</span>
+        </article>
+      </section>
+
+      <section class="pokedex-section" id="pokedex">
+        <div class="pokedex-copy">
+          <p class="section-kicker">Encontros de Alola</p>
+          <h2>Conheça quem<br>vive por aqui<span>.</span></h2>
+          <p>Da brisa quente da praia ao topo dos vulcões, Pokémon de todos os tipos chamam estas ilhas de lar.</p>
+          <button class="text-link pokedex-trigger" type="button" aria-controls="pokedex-browser" aria-expanded="false">Abrir Pokédex <span>↗</span></button>
+        </div>
+        <div class="pokedex-browser" id="pokedex-browser">
+          <div class="pokedex-tools">
+            <label class="search-box"><span>⌕</span><input id="pokemon-search" type="search" placeholder="Buscar Pokémon" aria-label="Buscar Pokémon"></label>
+            <label class="type-filter"><span>Tipo</span><select id="type-filter" aria-label="Filtrar por tipo"><option value="todos">Todos</option></select></label>
+          </div>
+          <p class="pokedex-status" id="pokedex-status">Clique em “Abrir Pokédex” para carregar os Pokémon de Alola.</p>
+          <div class="pokedex-grid" id="pokedex-grid">
+          <article class="pokemon-card pokemon-card--rowlet"><span class="pokemon-number">#0722</span><div class="pokemon-illustration"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/722.png" alt="Rowlet"></div><h3>Rowlet</h3><p>Grama · Voador</p></article>
+          <article class="pokemon-card pokemon-card--litten"><span class="pokemon-number">#0725</span><div class="pokemon-illustration"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/725.png" alt="Litten"></div><h3>Litten</h3><p>Fogo</p></article>
+          <article class="pokemon-card pokemon-card--popplio"><span class="pokemon-number">#0728</span><div class="pokemon-illustration"><img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/728.png" alt="Popplio"></div><h3>Popplio</h3><p>Água</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>Alola, onde o sol encontra o mar.</span>
+      <span>Feito para quem nunca para de explorar <strong>✦</strong></span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
